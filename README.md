@@ -19,7 +19,7 @@ open localhost:5173
 Postgres is also running, on port `5433`. To connect:
 
 ```bash
-psql --user=postgres --password --host=localhost postgres --port=5433
+psql --user=postgres --password --host=localhost --port=5433 postgres
 ```
 
 The password is `postgres`
