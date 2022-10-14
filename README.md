@@ -1,38 +1,29 @@
-# create-svelte
+# SvelteKit + Prisma + Docker
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Runs SvelteKit in a Docker container, with Postgres in second container
 
-## Creating a project
+### Usage
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Star 'er up
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+docker compose up --build
 ```
 
-## Building
-
-To create a production version of your app:
+The website is running on `localhost:5173`
 
 ```bash
-npm run build
+open localhost:5173
 ```
 
-You can preview the production build with `npm run preview`.
+Postgres is running on port `5433`. To connect:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+psql --user=postgres --password --host=localhost postgres --port=5433
+```
+
+The password is `postgres`
+
+## License
+
+MIT
