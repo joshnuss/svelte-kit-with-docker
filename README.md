@@ -4,7 +4,7 @@ Runs SvelteKit in a Docker container, with Postgres in a second container.
 
 ### Usage
 
-Star 'er up
+Start the containers:
 
 ```bash
 docker compose up --build
