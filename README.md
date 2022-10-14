@@ -1,6 +1,6 @@
 # SvelteKit + Prisma + Docker
 
-Runs SvelteKit in a Docker container, with Postgres in second container
+Runs SvelteKit in a Docker container, with Postgres in a second container.
 
 ### Usage
 
@@ -10,13 +10,13 @@ Star 'er up
 docker compose up --build
 ```
 
-The website is running on `localhost:5173`
+The site is now running on `localhost:5173`
 
 ```bash
 open localhost:5173
 ```
 
-Postgres is running on port `5433`. To connect:
+Postgres is also running, on port `5433`. To connect:
 
 ```bash
 psql --user=postgres --password --host=localhost postgres --port=5433
